@@ -1,0 +1,16 @@
+.foto{
+    width: 70px;
+    height: 60px;
+}
+
+.texto{
+    float: right;
+}
+
+span{
+    color: aqua;
+}
+
+.cabeza{
+    border-bottom: 3px solid maroon;
+}

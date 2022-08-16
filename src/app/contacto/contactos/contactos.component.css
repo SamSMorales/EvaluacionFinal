@@ -1,0 +1,160 @@
+#contactos{
+    background:url("../../../assets/img/particle-contacto.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 20px 0px;
+    width: 100%;
+    margin: auto;
+}
+
+.titulo-contacto{
+    text-align: center;
+    color: #ffffff;
+    font-size: 45px;
+    margin-bottom: 30px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.contenedor-contacto{
+    width: 80%;
+    margin: 20px auto;
+}
+
+#input{
+    float: left;
+    width: 50%;
+}
+
+#input input{
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+textarea{
+    float: right;
+    width: 45%;
+    border-radius: 5px;
+    padding: 20px;
+    height: 225px;
+    border: none;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+input[type="text"],input[type="email"],input[type="number"]:focus{
+    outline: 0 none;
+}
+
+textarea:focus{
+    outline: 0 none;
+}
+
+.boton-c{
+    width: 30%;
+    margin: auto;
+}
+
+.boton-contacto{
+    margin-top: 30px;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background: #17d0d5;
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+    display: inline-block;
+    word-wrap: break-word;
+}
+
+.boton-contacto:hover{
+    transform: translateY(-6px);
+    transition-duration: 0.3s;
+    animation: 1.5s mover-caja infinite;
+    background: #17cfd593;
+}
+
+.boton-contacto:hover:before{
+  opacity: 1;
+  transform: translateY(6px);
+  transition-duration: 0.3s;
+  animation: 1.5s mover-sombra infinite;
+}
+
+@keyframes mover-caja{ 
+  50%{ 
+    transform: translateY(-10px);
+  } 
+}
+@keyframes mover-sombra{
+  50%{
+    opacity: 1;
+    transform: translateY(10px) scale(0.9)
+  }
+}
+
+
+/*MediaQueris*/
+
+@media only screen and (max-width:980px) {
+    .contenedor-contacto{
+        width: 90%;
+        min-height: 35vh;
+    }
+
+    #input input{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:580px){
+    .contenedor-contacto{
+        width: 90%;
+    }
+
+    #input{
+        float: none;
+        width: 80%;
+        margin-left: 30px;
+    }
+
+    textarea{
+        float: none;
+        width: 80%;
+        margin-left: 48px;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    #contactos{
+        width: 135%;
+    }
+
+    .contenedor-contacto{
+        width: 93%;
+    }
+
+    #input{
+        float: none;
+        width: 85%;
+        margin-left: 20px;
+    }
+
+    textarea{
+        float: none;
+        width: 85%;
+        margin-left: 38px;
+    }
+
+}
